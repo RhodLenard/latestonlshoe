@@ -1,0 +1,190 @@
+#content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.float {
+  margin: 10px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  /* Required for absolute positioning of the cart icon */
+}
+
+.float:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.float img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.float h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.float p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #007bff;
+}
+
+.float a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Cart Icon */
+.cart-icon {
+  position: absolute;
+  top: 10px;
+  /* Adjust as needed */
+  right: 10px;
+  /* Adjust as needed */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent background */
+  border-radius: 50%;
+  /* Circular shape */
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-icon:hover {
+  background-color: rgba(255, 255, 255, 1);
+  /* Solid background on hover */
+}
+
+.cart-icon img {
+  width: 24px;
+  /* Adjust icon size */
+  height: 24px;
+  /* Adjust icon size */
+}
+
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  /* Ensures footer stays at the bottom */
+}
+
+#footer .foot,
+#footer #develop {
+  margin: 10px 0;
+}
+
+#develop ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav1 {
+  text-align: center;
+  padding: 30px 0;
+  /* Increase padding for more spacing */
+}
+
+.nav1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 25px;
+  /* Add gap for better spacing between links */
+}
+
+.nav1 ul li {
+  margin: 0;
+  /* Removed redundant margin */
+}
+
+.nav1 ul li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  /* Increase font size */
+  font-weight: bold;
+  /* Make the text bolder */
+  position: relative;
+  padding-bottom: 8px;
+  /* Add extra padding for clickable area */
+}
+
+.nav1 ul li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  /* Increase underline thickness */
+  background-color: #111;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav1 ul li a:hover::after,
+.nav1 ul li a.active::after {
+  width: 100%;
+  /* Expand underline to full width */
+  left: 0;
+  /* Align underline with the link text */
+}
+
+/* Cart Button Styles */
+.cart-btn {
+  position: fixed;
+  top: 30%;
+  /* Position at the vertical center */
+  right: 10px;
+  /* 20px from the right edge */
+  transform: translateY(-50%);
+  /* Center the button vertically */
+  z-index: 1000;
+  /* Ensure it appears above other elements */
+}
+
+.btn-cart {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cart:hover {
+  background-color: rgb(92, 93, 93);
+  transform: scale(1.05);
+}
+
+.btn-cart:active {
+  background-color: rgb(164, 166, 168);
+  transform: scale(0.95);
+}

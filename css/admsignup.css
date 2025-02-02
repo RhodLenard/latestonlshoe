@@ -1,0 +1,146 @@
+/* Center form container in the middle of the screen */
+#signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures it takes the full height */
+  padding: 20px;
+}
+
+/* Form styling */
+form.well {
+  width: 450px; /* Bigger width for better readability */
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+/* Title (Legend) */
+form.well legend {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input container */
+.input-container {
+  position: relative;
+  margin: 15px 0;
+  width: 100%;
+}
+
+/* Input fields */
+.input-container input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  background: #f9f9f9;
+  transition: 0.3s;
+}
+
+.input-container input:focus {
+  border-color: #007bff;
+  background: #fff;
+}
+
+/* Floating labels */
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Move label up when input is focused */
+.input-container input:focus ~ label,
+.input-container input:not(:placeholder-shown) ~ label {
+  top: 4px;
+  left: 10px;
+  font-size: 14px;
+  color: #007bff;
+  background: #ffffff;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+/* Submit button */
+form.well input[type='submit'],
+.btn-back-to-login {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+/* Primary submit button */
+form.well input[type='submit'] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+form.well input[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+/* Back to Login button */
+.btn-back-to-login {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-back-to-login:hover {
+  background-color: #545b62;
+}
+
+/* Alerts */
+.alert {
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form.well {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .input-container input {
+    font-size: 18px;
+  }
+
+  .btn-back-to-login,
+  form.well input[type='submit'] {
+    font-size: 18px;
+  }
+}

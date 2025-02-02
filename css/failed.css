@@ -1,0 +1,33 @@
+.btn-retry {
+  background-color: #dc3545; /* Bootstrap danger color (red) */
+  border-color: #dc3545;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-retry:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Bootstrap secondary color (gray) */
+  border-color: #6c757d;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+  transform: scale(1.05);
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

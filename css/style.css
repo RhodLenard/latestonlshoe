@@ -1,0 +1,431 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  background-color: whitesmoke;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#header {
+  height: 50px;
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+  text-indent: 10px; /* For consistent padding on left-aligned content */
+  display: flex; /* Use Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Distribute items evenly across the header */
+  box-shadow: 0px 0px 20px 0px black; /* Consistent box-shadow across browsers */
+}
+
+#header img {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  margin-left: 20px;
+  margin-top: 2.5px;
+}
+
+#header label {
+  position: relative;
+  top: 5px;
+  color: #fff;
+  text-indent: 80px;
+  font-size: 30px;
+  clear: both;
+  font-family: sans-serif;
+}
+
+#header ul {
+  list-style-type: none;
+  position: relative;
+}
+
+#header ul li {
+  display: inline;
+  position: relative;
+  float: right;
+  margin-right: 20px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#header ul li a:hover {
+  color: #25e;
+}
+
+#container {
+  margin: auto;
+  width: 1150px;
+}
+
+#content {
+  top: 10px;
+}
+
+.nav {
+  text-indent: 10px;
+  font-size: 15px;
+  text-align: center; /* Center the menu */
+  margin: 0; /* Remove default margins */
+  padding: 10px 0; /* Add some padding at the top and bottom */
+}
+
+.nav ul {
+  display: inline-block; /* Make the menu inline to center it */
+  padding: 0; /* Remove list padding */
+  margin: 0; /* Remove list margin */
+  list-style: none; /* Remove bullets */
+}
+
+.nav ul li {
+  display: inline;
+  position: relative;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px; /* Add spacing around links for better clickability */
+}
+
+.nav ul li a:hover {
+  color: #999;
+}
+
+#carousel {
+  position: relative;
+  width: 700px;
+  height: 300px;
+  margin: auto;
+}
+
+.carousel {
+  width: 700px;
+  height: 300px;
+}
+
+#video {
+  position: relative;
+  float: right;
+  width: 445px;
+  height: 300px;
+  background-color: #111;
+}
+
+.profile {
+  font-size: 20px;
+  padding: 5px;
+}
+.nav li a {
+  padding: 10px;
+}
+
+.nav1 {
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav1 ul li {
+  padding: 10px;
+  display: inline;
+}
+
+.nav1 ul li a {
+  text-decoration: none;
+  color: #444;
+}
+
+.nav1 ul li a:hover {
+  color: #111;
+}
+
+/*.content
+	{
+	width:500px;
+	height:500px;	
+	}*/
+.login_title {
+  font-size: 26px;
+  color: #0099ff;
+  font-family: Impact, Charcoal, sans-serif;
+  border-bottom: dashed 1px #cccccc;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 15px 20px 5px;
+  line-height: 35px;
+}
+.content h3 {
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+#account {
+  position: relative;
+  margin-top: 2%;
+}
+
+#account form table tr td {
+  font-size: 18px;
+}
+
+/* Container for the form */
+#admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Full viewport height for centering */
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Form container */
+form.well {
+  width: 350px; /* Fixed width for the form */
+  padding: 30px; /* Padding for spacing */
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border: 1px solid #e0e0e0; /* Light border for subtle definition */
+  text-align: center; /* Center-align text */
+}
+
+/* Legend (Adminstrator text) */
+form.well legend {
+  font-size: 24px; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  color: #333; /* Dark gray color */
+  margin-bottom: 20px; /* Spacing below the legend */
+}
+
+/* Input container */
+.input-container {
+  position: relative;
+  margin: 10px 0;
+}
+
+/* Input fields */
+.input-container input {
+  width: 80%; /* Slightly less than full width for better centering */
+  display: block; /* Ensure inputs are block-level for margin auto to work */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 14px; /* Readable font size */
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.input-container input:focus {
+  border-color: #007bff; /* Highlight input on focus */
+}
+
+/* Label (placeholder) */
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Move label up when input is focused or has value */
+.input-container input:focus ~ label,
+.input-container input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 5%;
+  font-size: 12px;
+  color: #007bff;
+  background-color: #ffffff;
+  padding: 0 5px;
+}
+
+/* Submit button */
+form.well input[type='submit'] {
+  width: 200px; /* Fixed width as per your HTML */
+  padding: 12px; /* Comfortable padding */
+  background-color: #007bff; /* Blue button */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Larger font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+form.well input[type='submit']:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Sign-up button */
+form.well a.btn.btn-info {
+  width: 200px; /* Fixed width to match the submit button */
+  padding: 12px; /* Comfortable padding */
+  background-color: #17a2b8; /* Info button color */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Larger font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+  text-decoration: none; /* Remove underline */
+}
+
+form.well a.btn.btn-info:hover {
+  background-color: #138496; /* Darker info color on hover */
+}
+
+#product {
+  position: relative;
+  width: 1150px;
+  margin-top: 0;
+}
+
+.float {
+  width: 300px;
+  height: 330px;
+  float: left;
+  margin-left: 55px;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.float img {
+  width: 300px;
+  height: 230px;
+}
+
+#product img:hover {
+  border: 8px groove #ccc;
+  width: 280px;
+  height: 210px;
+}
+
+.active {
+  color: #000;
+  border-bottom: 5px solid #111;
+  padding: 10px;
+}
+
+#footer {
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 150px;
+  clear: both;
+  background: linear-gradient(#2f2f2f, #000);
+  background: -moz-linear-gradient(#2f2f2f, #000);
+  background: -webkit-linear-gradient(#2f2f2f, #000);
+  -webkit-box-shadow: 0px 0px 20px 0px black;
+  -moz-box-shadow: 0px 0px 20px 0px black;
+  box-shadow: 0px 0px 20px 0px black;
+  border-top: 1px solid black;
+}
+.foot {
+  font-size: 20px;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30%;
+  float: left;
+}
+
+#foot {
+  position: relative;
+  float: left;
+  margin-left: 21%;
+}
+
+#foot ul a li {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+#foot ul a li:hover {
+  -webkit-box-shadow: 2px 2px 2px black;
+  -moz-box-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#develop {
+  position: relative;
+  float: left;
+  margin-left: 10%;
+}
+
+#develop ul a li {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+#develop ul a li:hover {
+  -webkit-box-shadow: 2px 2px 2px black;
+  -moz-box-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#leftnav {
+  position: fixed;
+  background-color: #111;
+  width: 200px;
+  top: 7%;
+  height: 650px;
+}
+
+#leftnav ul {
+  list-style-type: none;
+  text-indent: 35px;
+  right: 25px;
+  position: relative;
+}
+
+#leftnav ul li {
+  border-bottom: 1px solid #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+}
+
+#leftnav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#leftnav ul li a:hover {
+  color: #807e7e;
+}
+
+#leftnav ul li ul {
+  display: none;
+}
+
+#leftnav ul li:hover ul {
+  display: block;
+}
+
+#leftnav ul li:hover ul li {
+  padding: 0;
+  border: 0px solid #111;
+}
+
+#rightcontent {
+  position: relative;
+  width: 88%;
+  top: 50px;
+  left: 220px;
+  z-index: -99999;
+}

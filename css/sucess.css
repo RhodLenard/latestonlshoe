@@ -1,0 +1,100 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#container {
+  width: 90%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.receipt h2 {
+  text-align: center;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.receipt h3 {
+  color: #333;
+  margin-top: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.receipt p {
+  color: #666;
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+table tfoot td {
+  text-align: right;
+  font-weight: bold;
+}
+
+.btn-print,
+.btn-secondary {
+  display: inline-block; /* Ensures both behave the same */
+  text-align: center;
+  width: auto; /* Adjusts to content */
+  min-width: 160px; /* Ensures equal width */
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.btn-print {
+  background-color: #28a745; /* Green */
+  border-color: #28a745;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-print:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Gray */
+  border-color: #6c757d;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+  transform: scale(1.05);
+}

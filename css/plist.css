@@ -1,0 +1,118 @@
+#product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+#product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  /* Reduce gap between products */
+  width: 100%;
+}
+
+.float {
+  width: calc(25% - 15px);
+  /* Slightly smaller width for each product */
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.float img {
+  width: 100%;
+  /* Full width */
+  max-height: 180px;
+  /* Keep images smaller */
+  object-fit: contain;
+  /* Ensure full image is visible without cropping */
+  background-color: #f9f9f9;
+  /* Background color for empty space */
+  border-radius: 8px;
+  padding: 5px;
+  /* Add some padding inside the image container */
+}
+
+.float h3,
+.float p {
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .float {
+    width: calc(45% - 15px);
+    /* 2 products per row on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .float {
+    width: 100%;
+    /* 1 product per row on small screens */
+  }
+}
+
+.float img {
+  width: 100%;
+  /* Full width of the container */
+  max-height: 200px;
+  /* Ensure all images have the same height */
+  object-fit: contain;
+  /* Ensure the full image is visible */
+  background-color: #f9f9f9;
+  /* Background color for empty space */
+  border-radius: 8px;
+  /* Optional: Rounded corners */
+  padding: 5px;
+  /* Optional: Add padding inside the image container */
+}
+
+.float h3,
+.float p {
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .float {
+    width: calc(50% - 20px);
+    /* 2 products per row on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .float {
+    width: 100%;
+    /* 1 product per row on small screens */
+  }
+}
+
+.cart-icon {
+  margin-top: 10px;
+  cursor: pointer;
+  width: 60px;
+  /* Increase the container width */
+  height: 60px;
+  /* Increase the container height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-icon img {
+  width: 36px;
+  /* Increase the size of the cart icon image */
+  height: 36px;
+}

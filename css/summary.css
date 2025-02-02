@@ -1,0 +1,211 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.well {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+label {
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .table {
+    width: 100%;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tr {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
+    flex: 1;
+  }
+
+  .table td:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Legend Styling */
+legend {
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.payment-method-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Payment Options */
+.payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.payment-option input[type='radio'] {
+  display: none;
+  /* Hide the default radio button */
+}
+
+.payment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  transition: all 0.3s ease;
+  width: 150px;
+  text-align: center;
+}
+
+/* Hover Effect */
+.payment-card:hover {
+  transform: translateY(-5px);
+  /* Lift the card slightly */
+  border-color: #007bff;
+  /* Highlight the border */
+  background-color: #e3f2fd;
+  /* Light blue background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  /* Add a shadow */
+}
+
+/* Selected Effect */
+.payment-option input[type='radio']:checked + .payment-card {
+  border-color: #007bff;
+  background-color: #e3f2fd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.payment-logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.payment-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Confirm Button */
+.btn-pay-now {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Confirm Button */
+.btn-pay-now:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  /* Slightly enlarge the button */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .payment-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment-card {
+    width: 100%;
+    max-width: 200px;
+  }
+}
